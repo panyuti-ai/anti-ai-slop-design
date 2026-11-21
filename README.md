@@ -22,17 +22,32 @@ Claude's default design tends to repeat itself: serif text, light gray backgroun
 
 ## Install
 
+### Option 1: Clone and use
+
 ```bash
-mkdir -p ~/.claude/skills/anti-ai-slop-design
-curl -o ~/.claude/skills/anti-ai-slop-design/SKILL.md \
-  https://raw.githubusercontent.com/panyuti-ai/anti-ai-slop-design/main/SKILL.md
+git clone https://github.com/panyuti-ai/anti-ai-slop-design.git
+cd anti-ai-slop-design
+claude
 ```
 
-Or copy `SKILL.md` into a folder named `anti-ai-slop-design` inside your skills directory.
+Inside that folder, run `/anti-ai-slop-design`. The skill lives in `.claude/skills/`, so it loads automatically for this folder only.
+
+### Option 2: Install as a plugin (any project)
+
+```text
+/plugin marketplace add panyuti-ai/anti-ai-slop-design
+/plugin install anti-ai-slop-design --marketplace panyuti-ai/anti-ai-slop-design
+```
+
+Plugin skills are namespaced, so it appears as `/anti-ai-slop-design:anti-ai-slop-design`.
+
+### Option 3: Manual copy
+
+Copy `.claude/skills/anti-ai-slop-design/SKILL.md` into `~/.claude/skills/anti-ai-slop-design/SKILL.md` to use it in every project without a plugin.
 
 ## The method
 
-Open each section to read the full rule. The same content lives in [`SKILL.md`](SKILL.md), which is what Claude loads.
+Open each section to read the full rule. The same content lives in [`SKILL.md`](.claude/skills/anti-ai-slop-design/SKILL.md), which is what Claude loads.
 
 <details open>
 <summary><b>1. Start from context, not a blank request</b></summary>

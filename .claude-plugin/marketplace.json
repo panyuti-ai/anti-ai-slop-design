@@ -1,0 +1,11 @@
+{
+  "name": "anti-ai-slop-design",
+  "owner": { "name": "panyuti-ai" },
+  "plugins": [
+    {
+      "name": "anti-ai-slop-design",
+      "source": "./",
+      "description": "Workflow and prompting rules for getting non-generic UI, slide, and motion design out of Claude."
+    }
+  ]
+}

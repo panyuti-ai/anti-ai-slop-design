@@ -1,0 +1,7 @@
+{
+  "name": "anti-ai-slop-design",
+  "description": "Workflow and prompting rules for getting non-generic UI, slide, and motion design out of Claude.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "skills": "./.claude/skills/"
+}
